@@ -51,6 +51,8 @@ function TODO() {
 					<div id="passwordHelpBlock" class="form-text">
 						{lista.length == 0 ? (
 							"Agrega una tarea"
+						) : lista.length == 1 ? (
+							<p>hay una tarea pendiente</p>
 						) : (
 							<p>hay {lista.length} tareas pendientes</p>
 						)}
